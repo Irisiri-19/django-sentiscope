@@ -1,0 +1,108 @@
+{% load static %}
+.login{
+    color: black;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+.cen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout{
+    background-color: #333;
+    color: #fff;
+    float:right;
+}
+
+.register{
+    color: black;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+body{
+    margin: 0;
+    font-family: Arial;
+    background-repeat: no-repeat;
+    background-size: 1360px 768px;
+	background-image: url('/static/assets/bg.jpg');
+    background-position: center;
+    
+}
+
+#res{
+    background-color: blue;
+    color: white;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+
+}
+
+.input_field{
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+
+.btn{
+    background-color: #007bff; /* Set your desired background color */
+    color: #fff; /* Set text color */
+    padding: 10px 20px; /* Add padding for better appearance */
+    border: none; /* Remove the default border */
+    cursor: pointer;
+    overflow: hidden;
+    border-radius:2em;
+
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+.btn:active {
+    background-color: #003f80; 
+}
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.card{
+    background-color: var(--background);
+    display: block;
+    width: 600px;
+    min-height: 90px;
+    border: 3px solid var(--primary);
+    padding: 15px;
+    margin:calc(10vh - 50px) auto 0 auto;
+    box-shadow: white;
+    border-radius: 2em;
+}
+
+:root {
+    --primary: #dbdce1;
+    --secondary: #22D2A0;
+    --background: #dbdce1;
+  } 
+
+  

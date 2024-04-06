@@ -1,0 +1,85 @@
+#search-card{
+    contain: content;
+    border: 10% ;
+
+}
+
+.searh{
+    position: relative;
+
+}
+
+.label-item{
+    padding: auto;
+    color: #131141;   
+}
+
+.label-item label{
+    position: absolute;
+    left:0;
+    padding:10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #131141;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.textbox {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #131141;
+    border-radius: 5px;
+    outline: non;
+    color: black;
+    font-size:1em;
+
+}
+
+.textbox input:valid ~span,
+.textbox input:focus ~span{
+    color: #728ff3;
+    transform: translateX(10px) translateY(-6px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: white;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    letter-spacing: 0.2em;
+}
+
+.way{
+    margin: auto;
+    padding: 20px;
+}
+
+input, label{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sub{
+    background-color: #007bff; /* Set your desired background color */
+            color: #fff; /* Set text color */
+            padding: 10px 20px; /* Add padding for better appearance */
+            border: none; /* Remove the default border */
+            cursor: pointer;
+            overflow: hidden;
+}
+
+.sub:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+.sub:active{
+    background-color: #003f80; 
+}
+/* 
+body{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+} */

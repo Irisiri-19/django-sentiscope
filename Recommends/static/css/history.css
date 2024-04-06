@@ -1,0 +1,68 @@
+.table-content{
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-collapse: collapse; 
+}
+
+#table-content{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #table-content td, #table-content th{
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: darkred;
+  
+  }
+  
+  #table-content tr:nth-child(even){
+    background-color: #2c716c;
+  }
+  
+  #table-content tr:hover{
+    background-color: #ddd;
+  }
+  #table-content th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+  }
+  
+  #table-content tr {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+  font-weight: bold;
+  }
+  
+  #table-content img{
+      align-items: center;
+  }
+
+
+  #back{
+    background-color: #007bff; /* Set your desired background color */
+    color: #fff; /* Set text color */
+    padding: 10px 20px; /* Add padding for better appearance */
+    border: none; /* Remove the default border */
+    cursor: pointer;
+    overflow: hidden;
+    border-radius:2em;
+    float:center;
+}
+
+#back:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+#back:active {
+    background-color: #003f80; 
+}

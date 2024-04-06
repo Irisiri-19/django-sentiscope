@@ -1,0 +1,257 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="{% static 'js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+     
+    
+          
+      <script>
+        $(document).ready(function () {
+         $('.home-page').click(function(){
+            window.location.assign("{% url 'home_page' %}")
+        })
+    })
+      </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/fontAwesome.css' %}">
+        <link rel="stylesheet" href="{% static 'css/hero-slider.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl-carousel.css' %}">
+        <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/lightbox.css' %}">
+        <link rel="stylesheet" href="{% static 'css/review.css' %}">
+        
+
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5deb3;
+                background-image: url("{% static 'assets/analyse_bg.jpg' %}"); /*change bg image as you like*/
+                /* opacity: 0.8; */
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+    
+            .form-container {
+                background-color: #eee16d; /*change color of form*/
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 400px;
+                margin-left: 50px;               
+                
+            }
+    
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+    
+            input, select {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+            }
+    
+            button {
+                width: 100px;
+            height: 50px; 
+            background-color: #24af17; /*change color of review button*/
+            border: none;
+            color: #ffffff; 
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 25px; 
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            }
+    
+            #clear-btn {
+                width: 100px;
+            height: 50px; 
+            background-color: #494853; /*change color of clear button*/
+            border: none;
+            color: #ffffff; 
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 25px; 
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            }
+            .results-container {
+                margin-top: 20px;
+            }
+    
+            .user-card {
+                background-color: #cde074;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            }
+    
+            .select-button {
+                background-color: #3498db;
+                color: white;
+                padding: 5px;
+                cursor: pointer;
+            }
+         
+        </style>
+
+
+    </head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                   
+                    <a class="navbar-brand scroll-top home-page"><em>ProductReview</em>Analyst</a>
+
+                </div>
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="{% url 'logout' %}" data-id="logout">Logout</a></li>
+                  
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+   
+
+            <div class="form-container">
+                <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Product One</h1>
+                <form>
+                    <label for="pn1">Product Name</label>
+                    <input type="text" id="pn1" name="pn1" >
+    
+                    <label for="pi1">Product ID</label>
+                    <input type="text" id="pi1" name="pi1" >
+
+                    <label for="min1">Min Price</label>
+                    <input type="text" id="min1" name="min1" pattern="\d+" title="Must contain only numerical value" >
+    
+                    <label for="max1">Max Price</label>
+                    <input type="text" id="max1" name="max1" pattern="\d+" title="Must contain only numerical value" >
+    
+         
+                </form>
+            </div>
+
+            <div class="form-container">
+                <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Product Two</h1>
+                <form>
+                    <label for="pn2">Product Name</label>
+                    <input type="text" id="pn2" name="pn2" >
+    
+                    <label for="pi2">Product ID</label>
+                    <input type="text" id="pi2" name="pi2" >
+
+                    <label for="min2">Min Price</label>
+                    <input type="text" id="min2" name="min2" pattern="\d+" title="Must contain only numerical value" >
+    
+                    <label for="max2">Max Price</label>
+                    <input type="text" id="max2" name="max2" pattern="\d+" title="Must contain only numerical value" >
+    
+                </form>
+            </div>
+            
+
+            <div class="rv-1">
+                <button type="button" id="review-btn">Review</button>
+                <button type="button" id="clear-btn">Clear</button>
+            </div>
+</body>
+
+
+
+<script>
+    $(document).ready(function () {
+        $("#review-btn").click(function(){
+            var product1 = $('#pn1').val();
+            var pid1 = $('#pi1').val();
+            var product2 = $('#pn2').val();
+            var pid2 = $('#pi2').val();
+            var min1 = $('#min1').val();
+            var min2 = $('#min2').val();
+            var max1 = $('#max1').val();
+            var max2 = $('#max2').val();
+
+        // if(product1 == '' || product2 == '' || pid1 == '' || pid2 == '' || min1 == '' || min2 == '' || max1 == '' || max2 == ''){
+        //     alert('Please fill the fields')
+        // }else{
+
+            $.ajax({
+                url:'/scrape_products/',
+                method:'POST',
+                data:{
+                    "product1":product1,
+                    "pid1":pid1,
+                    "product2":product2,
+                    "pid2":pid2,
+                    "min1":min1,
+                    "min2":min2,
+                    "max1":max1,
+                    "max2":max2,
+                }, 
+                success:function(resp){
+                    // alert(resp.status);
+                    if(resp.status == 'success'){
+                        alert(resp.status);
+                        window.location.href='{% url "result_page" %}'
+                    } else{
+                        alert(resp.status);
+                        window.location.assign('#');
+                    }
+
+                }
+            });
+        
+
+        });
+
+        $('#clear-btn').click(function(){
+            // alert('clicked');
+            $('#pn1').val('');
+            $('#pi1').val('');
+            $('#pn2').val('');
+            $('#pi2').val('');
+            $('#min1').val('');
+            $('#min2').val('');
+            $('#max1').val('');
+            $('#max2').val('');
+        })
+      
+
+    });
+</script>
+
+</html>

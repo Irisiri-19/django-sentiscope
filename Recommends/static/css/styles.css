@@ -1,0 +1,102 @@
+.topnav {
+    background-color: white;
+    overflow:hidden;
+    box-shadow: grey;
+}
+
+
+
+.topnav img{
+    float:left;
+    padding: 14px 1em;
+}
+
+.topnav a{
+    float:left;
+    color: #728ff3;
+    text-align: center;
+    padding: 14px 1em;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color:#131141;
+}
+.topnav a:active {
+    background-color: #728ff3;
+    color: white;
+
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .rig {
+    float: right;
+  }
+
+.sub{
+  float: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius:2em;
+
+}
+
+#about{
+  display: block;
+  float: left;
+  justify-content: left;
+  padding: 20px;
+  text-align: left;
+}
+
+form .searh{
+  padding: 10px;
+  margin: 2px;
+  
+}
+
+
