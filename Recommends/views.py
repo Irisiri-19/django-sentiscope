@@ -31,8 +31,10 @@ from django.views.decorators.cache import never_cache
 from django.http import HttpResponse, JsonResponse
 from django.conf import settings
 
-model = load_model('D:/senti_pro/ECommerce/Recommends/static/SavedFiles/bilstm_model.h5')
+# model = load_model('D:/senti_pro/ECommerce/Recommends/static/SavedFiles/bilstm_model.h5')
+model = load_model('D:/senti_pro/github/django-sentiscope/bilstm_model.h5')
 
+# D:/senti_pro/github/django-sentiscope/bilstm_model.h5
 product1 = predict1 = range1 = popular1 = price1 = site1 = ''
 product2 = predict2 = range2 = popular2 = price2 = site2 = ''
 
@@ -140,9 +142,10 @@ def input(product_name,pid,min_price,max_price):
     chrome_options = Options()
     chrome_options.add_argument("--headless") 
 
-    # chrome_path = 'D:/Fleming/Machine Learning/sentiment_analysis/chromedriver-win64/chromedriver.exe' # Specify the path to your ChromeDriver recently downoloaded
-    chrome_path = 'D:/senti_pro/ECommerce/Recommends/static/chromedriver/chromedriver.exe' # Specify the path to your ChromeDriver recently downoloaded
-
+    # Specify the path to your ChromeDriver recently downoloaded
+    # chrome_path = 'D:/senti_pro/ECommerce/Recommends/static/chromedriver/chromedriver.exe' # Specify the path to your ChromeDriver recently downoloaded
+    chrome_path = 'D:/senti_pro/github/django-sentiscope/Recommends/static/chromedriver/chromedriver.exe' # Specify the path to your ChromeDriver recently downoloaded
+    
     service = ChromeService(chrome_path)
 
    
