@@ -32,7 +32,8 @@ from django.http import HttpResponse, JsonResponse
 from django.conf import settings
 
 # model = load_model('D:/senti_pro/ECommerce/Recommends/static/SavedFiles/bilstm_model.h5')
-model = load_model('D:/senti_pro/github/django-sentiscope/bilstm_model.h5')
+model = load_model('Recommends/bilstm_model.h5')
+# D:\senti_pro\github\django-sentiscope\Recommends\bilstm_model.h5
 
 # D:/senti_pro/github/django-sentiscope/bilstm_model.h5
 product1 = predict1 = range1 = popular1 = price1 = site1 = ''
@@ -144,7 +145,7 @@ def input(product_name,pid,min_price,max_price):
 
     # Specify the path to your ChromeDriver recently downoloaded
     # chrome_path = 'D:/senti_pro/ECommerce/Recommends/static/chromedriver/chromedriver.exe' # Specify the path to your ChromeDriver recently downoloaded
-    chrome_path = 'D:/senti_pro/github/django-sentiscope/Recommends/static/chromedriver/chromedriver.exe' # Specify the path to your ChromeDriver recently downoloaded
+    chrome_path = 'Recommends/static/chromedriver/chromedriver.exe' # Specify the path to your ChromeDriver recently downoloaded
     
     service = ChromeService(chrome_path)
 
